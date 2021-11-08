@@ -1,0 +1,35 @@
+# See the OWNERS docs: https://git.k8s.io/community/docs/devel/owners.md
+
+aliases:
+  sig-network-leads:
+  - caseydavenport
+  - dcbw
+  - thockin
+
+  ingress-nginx-admins:
+  - bowei
+  - rikatz
+
+  ingress-nginx-maintainers:
+  - ElvinEfendi
+  - justinsb
+  - rikatz
+  - strongjz
+
+  ingress-nginx-reviewers:
+  - ElvinEfendi
+  - cmluciano
+  - rikatz
+  - strongjz
+  - tao12345666333
+
+  ingress-nginx-helm-maintainers:
+  - ChiefAlexander
+  - cpanato
+
+  ingress-nginx-helm-reviewers:
+  - ChiefAlexander
+  - cpanato
+
+  ingress-nginx-kube-webhook-certgen-reviewers:
+  - invidian

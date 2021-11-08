@@ -1,0 +1,10 @@
+---
+- hosts: kube_control_plane
+  become: yes
+  tasks:
+    - name: Apply the deployment for Prometheus
+      community.kubernetes.k8s:
+        state: present
+        src: ~/kube-manifests/test2.yml
+      vars:
+        ansible_python_interpreter: /usr/bin/python3

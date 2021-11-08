@@ -1,0 +1,20 @@
+---
+- hosts: consul_node  
+  gather_facts: True
+  become: true
+  any_errors_fatal: true
+  vars:
+    #vault_backend: file
+    #vault_cluster_disable: True
+    #vault_log_level: debug
+    consul_group_name: consul_node
+    #vault_seal_generate_key: True
+    consul_node_role: bootstrap
+  tasks:
+    - name: Clone a github repository
+      git:
+        repo: https://github.com/ansible-community/ansible-consul.git
+        dest: ~/ansible-consul
+        clone: yes
+  roles:
+    - ansible-consul
